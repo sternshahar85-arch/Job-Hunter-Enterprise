@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Rejection_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Primary_Rejection_Reason</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ghost Job</fullName>
+                <default>false</default>
+                <label>Ghost Job</label>
+            </value>
+            <value>
+                <fullName>Sales Role (Anti-Sales)</fullName>
+                <default>false</default>
+                <label>Sales Role (Anti-Sales)</label>
+            </value>
+            <value>
+                <fullName>Mismatch (Heavy Dev)</fullName>
+                <default>false</default>
+                <label>Mismatch (Heavy Dev)</label>
+            </value>
+            <value>
+                <fullName>Location Mismatch</fullName>
+                <default>false</default>
+                <label>Location Mismatch</label>
+            </value>
+            <value>
+                <fullName>Manual Rejection</fullName>
+                <default>false</default>
+                <label>Manual Rejection</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>Mismatch</fullName>
+                <default>false</default>
+                <label>Mismatch</label>
+            </value>
+            <value>
+                <fullName>Sales Role</fullName>
+                <default>false</default>
+                <label>Sales Role</label>
+            </value>
+            <value>
+                <fullName>Location</fullName>
+                <default>false</default>
+                <label>Location</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

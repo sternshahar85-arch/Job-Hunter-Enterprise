@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_Saved_Minutes__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Status__c,
+  &quot;Archived&quot;, 2,       /* Tier 1: AI Noise Reduction (Anti-Sales/Ghost) */
+  &quot;AI Analyzed&quot;, 15,   /* Tier 2: Technical Review Ready */
+  &quot;Applied&quot;, 30,       /* Tier 3: Technical Solution Proposal */
+  &quot;Interviewing&quot;, 30,
+  &quot;Offer&quot;, 30,
+  0                    /* Tier 0: Raw/New/Processing */
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Time Saved (Minutes)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>
